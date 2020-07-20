@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/MemberFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/family_title"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="@dimen/fontdime"/>
+    <ListView
+        android:id="@+id/list_Gym"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:focusable="false">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkgym"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+
+            android:text=""
+
+            android:theme="@style/AppTheme3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ch_txt"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Maintenance_bu_submit"
+        android:layout_margin="8dp"
+
+        android:textSize="@dimen/fontdimeTitle"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_defult"/>
+
+</LinearLayout>

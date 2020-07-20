@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentInfo">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_Payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Payment"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Payment_Title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Select way to Pay"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/fontdimeTitle"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_Payment" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53"
+
+        >
+
+        <RadioButton
+
+            android:id="@+id/radioPaywhenRecieving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الدفع عند الإستقبال"
+android:buttonTint="@color/colorPrimary"
+            />
+
+        <RadioButton
+            android:id="@+id/radioPayVisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عن طريق الفيزا"
+            android:buttonTint="@color/colorPrimary"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_defult"
+        android:text="@string/Clean_bu_submit"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:onClick="PaymentSubmitOffers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupPayment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

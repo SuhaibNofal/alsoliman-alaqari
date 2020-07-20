@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.sulimanalaqaria.user.sulimanalaqaria.MaintenanceOrder">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/txt_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Maintenance_text_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="صهيب صهيب صهيب"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontdime"
+        android:textStyle="bold"
+
+        android:visibility="gone"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/first_layput_main_margin_top"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleft"
+                android:padding="5dp"
+                android:text="@string/Maintenance_text_Type"
+                android:textAlignment="inherit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleft"
+                android:padding="5dp"
+                android:text="@string/Maintenance_the_service"
+                android:textAlignment="inherit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleft"
+                android:padding="5dp"
+                android:text="@string/Maintenance_text_Unit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopRight"
+                android:background="@drawable/spinner_background"
+                android:padding="5dp"
+
+                >
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:popupBackground="@color/colorPrimary"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopRight"
+                android:background="@drawable/spinner_background"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinnerMaintService"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopRight"
+                android:background="@drawable/spinner_background"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinnerUnits"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/la_time_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_detail_maint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        <TextView
+            android:id="@+id/txtTimeMaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_margin="1dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/VisitOrder_text_entery_visit_order_time"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/txtDateMaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/VisitOrder_text_entery_date_visit"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_detail_maint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:text="@string/Maintenance_text_Order_details"
+        android:textAlignment="inherit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontdime"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_maint_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/la_time_date" />
+
+    <EditText
+        android:id="@+id/et_maint_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_background"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/Maintenance_text_Order_details"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textAlignment="inherit"
+        app:layout_constraintBottom_toTopOf="@+id/clean_responsiple"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_detail_maint"
+
+        />
+    <LinearLayout
+        android:id="@+id/clean_responsiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/et_maint_detail">
+
+        <CheckBox
+            android:id="@+id/checkgym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:text=""
+
+            android:theme="@style/AppTheme3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ch_txt_req"
+            android:gravity="center_vertical"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="goSelectImage"
+
+            android:src="@drawable/ic_camera"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/selectImage"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bu_maint_prevous_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_maint_detail">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_defult"
+            android:onClick="bu_maint_submit"
+            android:text="@string/Maintenance_bu_submit"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_defult"
+            android:text="@string/Maintenance_bu_cancel"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bu_maint_prevous_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_defult"
+        android:onClick="byOrdermaint"
+        android:text="@string/Maintenance_text_view_prev_req"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/fontdime"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/appBarLayout2"
+         android:orientation="vertical"
+         android:id="@+id/cleanLinearLayout"
+         android:visibility="invisible">
+
+         <TextView
+             android:id="@+id/textView7"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="صهيب صهيب صهيب"
+             android:textAlignment="center"
+             android:textColor="@color/colorPrimary"
+             android:textSize="22sp"
+             android:textStyle="bold" />
+
+         <LinearLayout
+             android:id="@+id/linearLayout4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="40dp"
+             android:layout_marginRight="5dp"
+             android:orientation="horizontal">
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:orientation="vertical">
+
+
+                 <TextView
+                     android:id="@+id/txt_clean_type"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:padding="5dp"
+                     android:text="نوع النظافة"
+                     android:textAlignment="inherit"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="18sp"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/txt_clean_service"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:padding="5dp"
+                     android:text="الخدمة"
+                     android:textAlignment="inherit"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="18sp"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/txt_clean_unit"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:padding="5dp"
+                     android:text="الوحدة"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="18sp"
+                     android:textStyle="bold" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:orientation="vertical">
+
+
+                 <LinearLayout
+                     android:id="@+id/linearLayout1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="12dp"
+                     android:background="@drawable/spinner_background"
+                     android:padding="5dp"
+
+                     >
+
+                     <Spinner
+                         android:id="@+id/spinner_clean_type"
+                         style="@style/SpinnerTheme"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center"
+                         android:popupBackground="@color/colorPrimary"
+                         android:spinnerMode="dropdown"
+                         android:textAlignment="center" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="12dp"
+                     android:background="@drawable/spinner_background"
+                     android:padding="5dp">
+
+                     <Spinner
+                         android:id="@+id/spinner_clean_service"
+                         style="@style/SpinnerTheme"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center"
+
+                         android:spinnerMode="dropdown"
+                         android:textAlignment="center" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="12dp"
+                     android:background="@drawable/spinner_background"
+                     android:padding="5dp">
+
+                     <Spinner
+                         android:id="@+id/spinner_clean_unit"
+                         style="@style/SpinnerTheme"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:textAlignment="center" />
+                 </LinearLayout>
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:padding="3dp"
+
+             android:text="تفاصيل الطلب"
+             android:textAlignment="inherit"
+             android:textColor="@color/colorPrimary"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/et_clean_detail"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="30dp"
+             android:layout_marginRight="5dp"
+             android:layout_weight="1"
+             android:background="@drawable/spinner_background"
+             android:ems="10"
+             android:gravity="start"
+             android:hint="تفاصيل الطلب"
+             android:inputType="textMultiLine"
+             android:lines="5"
+             android:padding="5dp"
+             android:scrollbars="vertical"
+             android:textAlignment="inherit"
+             />
+
+         <LinearLayout
+             android:id="@+id/linearLayout5"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_marginTop="20dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+
+             >
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:layout_weight="1"
+
+                 android:background="@drawable/button_defult"
+                 android:text="الغاء"
+                 android:id="@+id/bu_clean_cancle"
+                 android:textAlignment="center"
+                 android:textColor="@color/colorWhite"
+                 android:textSize="18sp"
+                 android:textStyle="bold" />
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/button_defult"
+                 android:text="تأكيد"
+                 android:id="@+id/bu_clean_submit"
+                 android:textAlignment="center"
+                 android:textColor="@color/colorWhite"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 android:onClick="buSubmitclean"/>
+         </LinearLayout>
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/button_defult"
+             android:layout_margin="20dp"
+             android:textAlignment="center"
+             android:text="عرض طلبات النظافة السابقة"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:textColor="@color/colorWhite"
+             android:onClick="byOrderBreveus"/>
+     </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sulimanalaqaria.user.sulimanalaqaria.PreviousCleanOrder">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_prevues"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/txt_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/PreviousClean_text_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/li_title_rv_PrevuseMaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout3">
+
+        <TextView
+            android:id="@+id/tv_maint_Type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PreviousClean_text_clean_type"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_maint_type-Service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PreviousMaint_text_service_type"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_maint_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PreviousMaint_text_order_status"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_maint_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PreviousMaint_text_order_no"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/brogress_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prevues_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/li_title_rv_PrevuseMaint">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

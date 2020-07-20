@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    tools:context="com.sulimanalaqaria.user.sulimanalaqaria.VisitOrder">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_visit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/VisitOrder_text_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/gray"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/dark"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/VisitOrder_text_tv_date"
+
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/VisitOrder_text_tv_unit"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleftVisit"
+                android:text="@string/VisitOrder_text_tv_name"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/VisitOrder_text_tv_name_visitor"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleftVisit"
+                android:text="@string/VisitOrder_text_tv_time"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="@string/VisitOrder_text_tv_visit_reason"
+
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:orientation="vertical"
+            android:paddingEnd="5dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:hint="@string/VisitOrder_text_entery_date_visit"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_Unit_visit"
+                style="@style/SpinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:popupBackground="@color/colorPrimary"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontdime" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:background="@color/colorWhite"
+                android:hint="@string/VisitOrder_text_name"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtVisetorName"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorWhite"
+                android:hint="@string/VisitOrder_text_visitor_name"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopRightVisit"
+                android:background="@color/colorWhite"
+                android:hint="@string/VisitOrder_text_entery_visit_order_time"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinner_Resone_visit"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bu_submit_visit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_defult"
+        android:text="@string/VisitOrder_text_bu_submit"
+        android:textStyle="bold"
+        android:textSize="@dimen/fontdime"
+        android:textColor="@color/colorWhite"
+        android:onClick="SubmitVisit"
+        />
+    <Button
+        android:id="@+id/bu_Prev_visit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_defult"
+        android:text="@string/VisitOrder_text_bu_previous_visit"
+        android:textStyle="bold"
+        android:textSize="@dimen/fontdime"
+        android:textColor="@color/colorWhite"
+        android:onClick="getVisitPrevious"
+        />
+
+
+</LinearLayout>

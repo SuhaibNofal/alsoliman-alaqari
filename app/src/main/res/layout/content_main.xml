@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<!--<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="اهلا بكم"
+    android:textAlignment="center"
+    android:layout_marginTop="10dp"
+    android:textSize="@dimen/fontdime"
+    android:id="@+id/text_title"
+    android:layout_alignParentTop="true"
+    android:textColor="@color/colorPrimaryDark"
+    android:textStyle="bold"/>-->
+   <ImageView
+       android:layout_width="match_parent"
+      android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentStart="true"
+       android:layout_height="200dp"
+       android:id="@+id/image_hotel"
+       android:layout_margin="3dp"
+       android:scaleType="fitXY"
+       android:src="@drawable/mainhotel"
+       android:elevation="2dp"/>
+
+   <TextView
+       android:id="@+id/text_details"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/image_hotel"
+       android:layout_marginTop="10dp"
+       android:padding="3dp"
+       android:layout_above="@+id/layout_tow_button"
+       android:text="@string/text_in_main_activity"
+       android:textAlignment="inherit"
+       android:textColor="@color/colorPrimaryDark"
+       android:textSize="@dimen/fontdime"
+       android:scrollbars="vertical"
+       android:textStyle="bold"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="40dp"
+       android:id="@+id/layout_tow_button"
+       android:orientation="horizontal"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="40dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginTop="20dp"
+>
+      <Button
+          android:id="@+id/bu_Main_Res"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+         android:layout_margin="5dp"
+          android:background="@drawable/button_defult"
+          android:text="@string/MainActivity_bu_request"
+          android:onClick="buReservation"
+          android:textStyle="bold"
+          android:textColor="@color/colorWhite"
+          android:textAlignment="center"
+          android:textSize="@dimen/fontdime"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_margin="5dp"
+          android:background="@drawable/button_defult"
+          android:textSize="@dimen/fontdime"
+          android:text="@string/MainActivity_bu_call"
+          android:textStyle="bold"
+          android:textColor="@color/colorWhite"
+          android:textAlignment="center"
+          />
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>

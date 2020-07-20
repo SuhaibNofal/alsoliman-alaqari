@@ -1,0 +1,330 @@
+<resources>
+    <string name="app_name">SulimanALaqaria</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Log Out</string>
+    <string name="text_in_main_activity">في السليمان العقارية نوفر الفرص الاستثمارية المميزة، ونواكب نهضة البناء، ونقدم منتجات عقارية ملائمة للسوق، بقيمة مضافة في الجودة والخدمات، فرؤيتنا نوعية لمشاريعنا السكنية .. قدمنا ما نفخر به خلال العقد الماضي، ونقدم ما نواصل به مسيرة نجاحنا ـ بعد عون الله وتوفيقه .</string>
+
+    <string name="login_UserName">User Name</string>
+
+    <string name="login_Password">Password</string>
+
+    <string name="bu_Log_In">Log In</string>
+    <string name="error_Message_UserName">the User Name is Valid</string>
+    <string name="error_Message_UserName_toLong">the User Name to Long</string>
+
+    <string name="error_Message_Passworld">the password is Valid</string>
+
+    <string name="ProgressDialogTitle">Fetching Data</string>
+    <string name="ProgressDialogMessage">Please wait...</string>
+    <string name="Log_in_Faild_User">Faild User</string>
+    <string name="Log_in_User_is_Not_Active">User is Not Active</string>
+    <string name="Log_in_ًWelcom_To_Alsoliman">ًWelcom To Alsoliman</string>
+    <string name="Check_Internet_Connection">Check Internet Connection</string>
+    //translate LogIn Activity
+    <string name="MainActivity_tv_title">Main</string>
+    <string name="MainActivity_bu_request">Request</string>
+    <string name="MainActivity_bu_call">Call Us</string>
+    <string name="MainActivity_drawer_tv_reservation">Reservation</string>
+    <string name="MainActivity_drawer_tv__services">Services</string>
+    <string name="MainActivity_drawer_tv_clean_req">Clean Requests</string>
+    <string name="MainActivity_drawer_tv_maint_req">Maint Requests</string>
+    <string name="MainActivity_drawer_tv_notify">Notification</string>
+    <string name="MainActivity_drawer_tv_information">My Information</string>
+    <string name="MainActivity_drawer_tv_setting">Setting</string>
+    <string name="MainActivity_drawer_tv__languge">Languge</string>
+    <string name="Maintenance_text_title">Maintenance Request</string>
+    <string name="familyـhealthـclub">The Health Club</string>
+    //translate MainActivity Activity
+    <string name="Maintenance_text_Type">Maintenance type</string>
+    <string name="Maintenance_the_service">The Service</string>
+    <string name="Maintenance_text_Unit">Unit</string>
+    <string name="Maintenance_text_Order_details">Order details</string>
+    <string name="Maintenance_text_view_prev_req">Previous Maintenance Requests</string>
+    <string name="Maintenance_bu_submit">Submit</string>
+    <string name="Maintenance_bu_cancel">Cancel</string>
+    <string name="Maintenance_Service_Not_Found">Service Not Found</string>
+    <string name="Maintenance_Feiled_not_completed">Feiled not completed</string>
+    <string name="Maintenance_request_is_done">request is done</string>
+    <string name="Maintenance_somthing_rong_not_requested">Somthing Rong Not Requested</string>
+
+    //translate Maintenance Activity
+
+    <string name="Clean_toast_no_clean_availabl">Clean Not in Service</string>
+    <string name="Clean_toast_emp_and_NoOFHoures">please entry Number of Employees and Houres</string>
+    <string name="Clean_text_No_Of_Emp">No of Employees</string>
+    <string name="Clean_text_No_Of_Hourse">No of Hours</string>
+    <string name="Clean_text_title">Clean Request</string>
+    <string name="Clean_text_Type">Clean type</string>
+    <string name="Clean_the_service">The Service</string>
+    <string name="Clean_text_Unit">Unit</string>
+    <string name="Clean_text_Order_details">Order details</string>
+    <string name="Clean_text_view_prev_req">Previous Clean Requests</string>
+    <string name="Clean_bu_submit">Submit</string>
+    <string name="Clean_bu_cancel">Cancel</string>
+
+    //translate Clean Activity
+    <string name="Clean_Service_Not_Found">Service Not Found</string>
+    <string name="Clean_Feiled_not_completed">Feiled not completed</string>
+    <string name="Clean_request_is_done">request is done</string>
+    <string name="Clean_somthing_rong_not_requested">Somthing Rong Not Requested</string>
+    <string name="PreviousMaint_text_title">Previous Order Maint</string>
+    <string name="PreviousMaint_text_order_no">Order No</string>
+    <string name="PreviousMaint_text_order_status">Order Status</string>
+    <string name="PreviousMaint_text_service_type">Service Type</string>
+    <string name="PreviousMaint_text_maint_type">Maint Type</string>
+    <string name="PreviousClean_text_title">Previous Order Clean</string>
+    <string name="PreviousClean_text_clean_type">Clean Type</string>
+    <string name="PreviousVisit_text_title">Previous Visit Order</string>
+    <string name="PreviousVisit_text_date_visit">Visit Date</string>
+    <string name="PreviousVisit_text_visit_name">Visitors Name</string>
+    <string name="PreviousVisit_text_visit_Time">Visit Time</string>
+    <string name="PreviousVisit_text_visit_Reason">Visit Reason</string>
+
+    //translate PreviousMaintOrder Activity
+    <string name="VisitOrder_text_title">Visit Order</string>
+    <string name="VisitOrder_text_entery_date_visit">Enter the date</string>
+    <string name="VisitOrder_text_entery_visit_order_time">Enter the time</string>
+    <string name="VisitOrder_text_entery_visit_order_unit_number">Enter the unit number</string>
+    <string name="VisitOrder_text_entery_visit_order_Reason_visit">Enter the reason for the visit</string>
+
+    //translate PreviousCleanOrder Activity
+    <string name="VisitOrder_text_entery_visit_order_name">Enter the name</string>
+    <string name="VisitOrder_text_entery_visit_order_visit_name">Enter the visitors name</string>
+
+    //translate PreviousVisitOrder Activity
+    <string name="VisitOrder_text_tv_date">Date</string>
+    <string name="VisitOrder_text_tv_unit">Unit</string>
+    <string name="VisitOrder_text_tv_name">Name</string>
+    <string name="VisitOrder_text_tv_name_visitor">Visitors Name</string>
+    <string name="VisitOrder_text_tv_time">Time</string>
+
+
+    //translate VisitOrder Activity
+    <string name="VisitOrder_text_tv_visit_reason">Reason Visit</string>
+    <string name="VisitOrder_text_select_date">Enter Date</string>
+    <string name="VisitOrder_text_name">The Name</string>
+    <string name="VisitOrder_text_visitor_name">Visitors Name</string>
+    <string name="VisitOrder_text_select_time">Enter Time</string>
+    <string name="VisitOrder_text_bu_submit">Submit</string>
+    <string name="VisitOrder_text_bu_previous_visit">Previous Visit Requests</string>
+    <string name="Reservation_text_title">Reservation</string>
+    <string name="detailReservation_tv_title">Reservation request</string>
+    <string name="detailReservation_tv_book_amount">Book Amount</string>
+    <string name="detailReservation_tv_avail_time">Available times for reservation</string>
+    <string name="detailReservation_tv_day">Day</string>
+    <string name="detailReservation_tv_fhours">From Hour</string>
+    <string name="detailReservation_tv_thours">To Hour</string>
+    <string name="detailReservation_tv_selectdate">Select Date</string>
+    <string name="detailReservation_tv_date">Date</string>
+    <string name="detailReservation_bu_req">Request</string>
+    <string name="detailReservation_toast_enter_date">Enter the date</string>
+    <string name="detailReservation_toast_selecttime">Enter the Time</string>
+    //translate Reservation Activity
+    <string name="detailReservation_toast_Req_done">Request Done</string>
+    //translate detailReservation Activity
+    <string name="detailReservation_toast_check_date">This Date and Time are Reserved</string>+
+    <string name="Services_text_title">Services</string>
+    <string name="Services_text_maint">Maint</string>
+    <string name="Services_text_clean">Clean</string>
+    <string name="Services_text_visit">Visitor</string>
+    <string name="Services_text_reser">Reservation</string>
+    <string name="info_text_title">My Information</string>
+    <string name="info_text_Apartment">Apartment</string>
+    <string name="info_text_NetArea">Net Area</string>
+    <string name="info_text_balance">Current Balance</string>
+    <string name="info_text_rent_information">Information the Rent</string>
+    <string name="info_text_rent_expir">Expiry Date</string>
+
+    <string name="info_text_tv_Unit">Unit :</string>
+    <string name="info_text_Totalarea">Area :</string>
+    <string name="info_text_tv_RentAmt">Rent Amount :</string>
+    <string name="info_text_tv_Balance">Balance :</string>
+    <string name="info_text_tv_ContrDate">ContrDate :</string>
+    <string name="info_text_tv_RentStrtDate">Rent Start :</string>
+    <string name="info_text_tv_RentEndDate">Rent End :</string>
+    <string name="info_tv_ElectricityMeterNumber">Electricity Meter Number :</string>
+    <string name="info_tv_NumberofCardsReceived">Number of Cards Received :</string>
+    //translate Services Activity
+    <string name="info_text_rent_rent_amount">Rent Amount</string>+
+    <string name="Approval_text_title">Offers Price</string>
+    <string name="Approval_text_detail">Quotation for maintenance order number</string>
+    <string name="Approval_Offer_value">Offer value</string>
+    <string name="Approval_buSubmit">Submit</string>
+
+    //translate Information Activity
+    <string name="Approval_its_ok">Has been approved</string>
+    <string name="Rating_text_title">Evaluation</string>
+    <string name="Rating_text_detail_Maint">A maintenance order has been closed</string>
+    <string name="Rating_text_detail_Clean">Cleaning order has been closed</string>
+    <string name="Rating_text_detail_Res">Reservation closed</string>
+    <string name="Rating_text_Services">Service evaluation</string>
+    <string name="Rating_text_Note">Notes</string>
+    <string name="Rating_buRating">Evaluation</string>
+
+    //translate Approval Offers Price
+    <string name="Rating_its_ok">Thank you!</string>
+
+    //translate Approval Login to unit Price
+    <string name="Approv_Log_in">Thank you!</string>
+
+    //translate FamilyinGym
+    <string name="family_title">Family members who are authorized to enter</string>
+    <string name="tv_percent_Gym">Current Occupancy Rate At Health Club</string>
+    <string name="tv_Gym_ListWork_day">Day</string>
+    <string name="tv_Gym_ListWork_gender">Gender</string>
+    <string name="tv_Gym_ListWork_fhour">From Hour</string>
+    <string name="tv_Gym_ListWork_thour">To Hour</string>
+    <string name="tv_Gym_time">Times available at the health club</string>
+    <string name="ch_txt">Disclaimer</string>
+    <string name="ch_txt_req">Disclaimer and Login</string>
+
+
+    <string name="Res_Replay_tv_title">Dear customer</string>
+    <string name="Res_Replay_tv">please review the damages caused by misuse of the facility</string>
+
+    //translate seggestions
+    <string name="suggestions_title">Complaints and suggestions</string>
+    <string name="suggestions_bu_send">Send</string>
+    <string name="suggestions_tv">To help us provide the best services, please share with us any comments, complaints, or suggestions, and we will contact you to respond to your inquiries. Thank you for your cooperation</string>
+
+    <string name="Communication_title">Communication and follow-up</string>
+    <string name="Communication_Operation_manger">Operation Manger</string>
+    <string name="Communication_Email">Email</string>
+    <string name="Communication_Phone">Phone No</string>
+    <string name="Communication_Property_manager">Property manager</string>
+    <string name="Communication_Reception">Reception</string>
+    //
+    <string name="selectImage">Select Image</string>
+    <string name="bu_select">Select</string>
+    <string name="bu_add">Add</string>
+    //
+    <string name="Payment_Title">Payment information</string>
+
+    //
+    <string name="Detail_rent_Title"> Detail Rent</string>
+    <string name="Detail_rent_tenant_name">Tenant Name :</string>
+    <string name="Detail_rent_Start">Rent Start :</string>
+    <string name="Detail_rent_end">Rent End:</string>
+    <string name="Detail_rent_amount">Amount Rent :</string>
+
+    <string-array name="maint">
+
+        <item>اختيار</item>
+        <item>صيانة السباكة</item>
+        <item>مكيفات</item>
+        <item>كهرباء</item>
+        <item>صيانة مرفقات</item>
+    </string-array>
+    <string-array name="plumbing">
+        <item>ماسورة</item>
+        <item>انبوب</item>
+        <item>مكسورة</item>
+        <item>انقطاع الماء</item>
+    </string-array>
+    <string-array name="condition">
+        <item>عطل هواء</item>
+        <item>غاز</item>
+        <item>حامي</item>
+        <item>بارد</item>
+    </string-array>
+    //translate Rating
+    <string-array name="electric">
+        <item>انقطاع</item>
+        <item>صيانة الاضواء</item>
+        <item>صيانة الاسلاك</item>
+        <item>شرط</item>
+    </string-array>
+    <string-array name="Facilities">
+        <item>مرفق</item>
+        <item>مرفق2</item>
+        <item>مرفق3</item>
+        <item>مرفق4</item>
+    </string-array>
+    <string-array name="Units">
+
+        <item>الوحدة1</item>
+        <item>الوحدة2</item>
+        <item>الوحدة3</item>
+        <item>الوحدة4</item>
+    </string-array>
+    <string-array name="Clean">
+        <item>اختار</item>
+        <item>غسيل</item>
+        <item>ممر</item>
+        <item>شبابيك</item>
+        <item>مراحيض</item>
+        <item>غرف</item>
+    </string-array>
+    <string-array name="Clean_Services_Wash">
+
+        <item>غسيل سيارات</item>
+        <item>غسيل ملابس</item>
+
+    </string-array>
+    <string-array name="Clean_Services_crodor">
+
+        <item>غسيل ممر</item>
+        <item>تكنيس </item>
+
+    </string-array>
+    <string-array name="Clean_Services_Window">
+
+        <item>غسيل شبابيك</item>
+        <item>مسح </item>
+
+    </string-array>
+    <string-array name="Clean_Services_Bathroom">
+
+        <item>غسيل مرحاض</item>
+        <item>تنظيف القمامة</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="Clean_Services_room">
+
+        <item>غسيل غرف</item>
+        <item>ترتيب الغرف </item>
+        <item>تنظيف المجلس </item>
+    </string-array>
+    <string name="checkout_ui_callback_scheme">checkoutui</string>
+    <string name="payment_button_callback_scheme">paymentbutton</string>
+    <string name="custom_ui_callback_scheme">customui</string>
+
+    <string name="checkout_ui_title">Ready-to-Use UI</string>
+    <string name="payment_button_title">Payment Button</string>
+    <string name="custom_ui_title">SDK &amp; Your Own UI</string>
+    <string name="checkout_immediately_with">Checkout immediately with</string>
+    <string name="sdk_version_number">mobile sdk v%s</string>
+    <string name="visa">VISA</string>
+
+    <string name="card_holder_hint">Card Holder</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="card_expiry_month_hint">MM</string>
+    <string name="card_expiry_year_hint">YY</string>
+    <string name="card_cvv_hint">CVV</string>
+
+    <string name="date_delimiter">/</string>
+
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_proceed_to_checkout">PROCEED TO CHECKOUT</string>
+    <string name="button_pay_now">PAY NOW</string>
+
+    <string name="message_successful_payment">The payment was successful</string>
+    <string name="message_unsuccessful_payment">"The payment was unsuccessful"</string>
+    <string name="message_payment_confirmation">Payment of %1$s %2$s will be executed</string>
+
+    <string name="progress_message_please_wait">Please wait…</string>
+    <string name="progress_message_checkout_id">Getting the checkout id…</string>
+    <string name="progress_message_checkout_info">Getting the checkout info…</string>
+    <string name="progress_message_payment_status">Getting the payment status…</string>
+    <string name="progress_message_processing_payment">Processing payment…</string>
+
+    <string name="error_message">An error occurred</string>
+    <string name="error_empty_fields">The fields must not be empty</string>
+</resources>

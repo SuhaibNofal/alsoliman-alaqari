@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.sulimanalaqaria.user.sulimanalaqaria.LogIn">
+
+    <ImageView
+        android:layout_width="@dimen/imageWidth"
+        android:layout_height="@dimen/imagehight"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logosuliman" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2"
+        android:background="@drawable/button_defult"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:layout_marginTop="50dp"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_UserName"
+            android:inputType="text"
+            android:textSize="@dimen/fontdime"
+            android:textColorLink="@color/colorPrimary"
+            android:textCursorDrawable="@color/colorPrimary"
+            tools:textCursorDrawable="@color/colorPrimary" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_pass"
+        android:theme="@style/AppTheme2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_defult"
+        app:errorEnabled="true"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_Password"
+            android:textSize="@dimen/fontdime"
+            android:id="@+id/text_input_passEdTe"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_defult"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/bu_Log_In"
+        android:textSize="@dimen/fontdime"
+        android:onClick="confirmData"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+</LinearLayout>

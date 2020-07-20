@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sulimanalaqaria.user.sulimanalaqaria">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BaseAlsolimanApplication"
+        android:allowBackup="false"
+        android:configChanges="locale|orientation"
+        android:icon="@mipmap/logosuliman"
+        android:label="Alaqary"
+        android:roundIcon="@drawable/logosuliman"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".checkout_ui"></activity>
+        <activity android:name=".ImageMaintSelect" />
+        <activity android:name=".Payment" />
+        <activity
+            android:name=".DetailsRentUnit"
+            android:parentActivityName=".Information"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PaymentInfo"
+            android:parentActivityName=".Notification"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Communication"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Suggestions"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ReservationReplay"
+            android:parentActivityName=".Notification"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".FamilyinGym"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".approvalLogIn" />
+        <activity
+            android:name=".RatingRequest"
+            android:parentActivityName=".Notification"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ApprovalOffersPrice"
+            android:parentActivityName=".Notification"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Notification"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PreviouseVisitOrder"
+            android:parentActivityName=".VisitOrder"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".CleanOrder"
+            android:parentActivityName=".Services"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PreviousMaintOrder"
+            android:parentActivityName=".Services" />
+        <activity
+            android:name=".DetailsReservation"
+            android:parentActivityName=".Reservtion" />
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplachScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Reservtion"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Services"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MaintenanceOrder"
+            android:parentActivityName=".Services"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PreviousCleanOrder"
+            android:parentActivityName=".Services" />
+        <activity
+            android:name=".VisitOrder"
+            android:parentActivityName=".Services" />
+        <activity android:name=".LogIn" />
+        <activity
+            android:name=".Information"
+            android:parentActivityName=".Services" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logosuliman" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <service
+            android:name=".FireBaseNotification"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.oppwa.mobile.connect.service.ConnectService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.oppwa.mobile.connect.checkout.dialog.CheckoutActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Checkout.Light"
+            android:windowSoftInputMode="adjustResize"
+            tools:replace="android:theme" />
+
+        <receiver
+            android:name=".CheckoutBroadcastReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

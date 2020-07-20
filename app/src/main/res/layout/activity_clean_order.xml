@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CleanOrder"
+    android:id="@+id/clean_layout">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/txt_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Clean_text_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="صهيب صهيب صهيب"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontdime"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_clean_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleft"
+                android:padding="5dp"
+                android:text="@string/Clean_text_Type"
+                android:textAlignment="inherit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_clean_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleft"
+                android:padding="5dp"
+                android:text="@string/Clean_the_service"
+                android:textAlignment="inherit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_clean_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopleft"
+                android:padding="5dp"
+                android:text="@string/Clean_text_Unit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontdime"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopRight"
+                android:background="@drawable/spinner_background"
+                android:padding="5dp"
+
+                >
+
+                <Spinner
+                    android:id="@+id/spinner_clean_type"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:popupBackground="@color/colorPrimary"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopRight"
+                android:background="@drawable/spinner_background"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinner_clean_service"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopRight"
+                android:background="@drawable/spinner_background"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinner_clean_unit"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        <!--<TextView
+        android:text="عدد الموظفين"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontdime"
+        android:textAlignment="inherit"
+        android:gravity="start|center"/>
+
+        <EditText
+            android:id="@+id/et_no_of_emp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:ems="10"
+
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorWhite"
+           android:hint="0"
+            android:inputType="number" />
+
+        <TextView
+            android:text="عدد الساعات"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontdime"
+            android:textAlignment="inherit"
+            android:gravity="start|center"/>
+        <EditText
+            android:id="@+id/et_no_of_Hours"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1.1"
+            android:ems="10"
+            android:padding="5dp"
+            android:hint="0"
+            android:gravity="center"
+            android:backgroundTint="@color/colorWhite"
+            android:inputType="number" />-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_NoOFEmp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary"
+            android:theme="@style/AppTheme3"
+            app:helperTextTextColor="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/Clean_text_No_Of_Emp"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_NoOFHours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="inherit"
+            android:textColorHint="@color/colorPrimary"
+            android:theme="@style/AppTheme3"
+            app:helperTextTextColor="@color/colorPrimary"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/Clean_text_No_Of_Hourse"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/la_time_date_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+        <TextView
+            android:id="@+id/txtTimeclean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/VisitOrder_text_entery_visit_order_time"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/txtDateclean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/VisitOrder_text_entery_date_visit"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:padding="3dp"
+        android:text="@string/Clean_text_Order_details"
+        android:textAlignment="inherit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontdime"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_clean_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/la_time_date_clean" />
+
+    <EditText
+        android:id="@+id/et_clean_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+
+        android:background="@drawable/spinner_background"
+        android:ems="10"
+
+        android:gravity="start"
+        android:hint="@string/Clean_text_Order_details"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textAlignment="inherit"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_detail" />
+    <!--<LinearLayout
+        android:id="@+id/responsiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+      >
+
+        <CheckBox
+            android:id="@+id/checkgym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:text=""
+
+            android:theme="@style/AppTheme3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ch_txt"
+            android:gravity="center_vertical"/>
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bu_clean_prevous_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_clean_detail">
+
+        <Button
+            android:id="@+id/bu_clean_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/button_defult"
+            android:text="@string/Clean_bu_cancel"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bu_clean_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_defult"
+            android:onClick="buSubmitclean"
+            android:text="@string/Clean_bu_submit"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bu_clean_prevous_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button_defult"
+        android:onClick="previousCleanOrder"
+        android:text="@string/Clean_text_view_prev_req"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/fontdime"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

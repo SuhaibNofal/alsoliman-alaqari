@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clean Amount"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/fontdimeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_cleanamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="@dimen/fontdimeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cleanamount">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_defult"
+            android:text="@string/Clean_bu_cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontdimeTitle"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:onClick="hidclean"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_defult"
+            android:text="@string/Clean_bu_submit"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontdimeTitle"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:onClick="goClean"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.sulimanalaqaria.user.sulimanalaqaria.Reservtion">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Reservation_text_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+           <!-- <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رجوع"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:onClick="back"/>-->
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<include layout="@layout/animationin_on_scrolled_tabbar"
+    />
+       <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_reservation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@android:color/darker_gray"/>-->
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

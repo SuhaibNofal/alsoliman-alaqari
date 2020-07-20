@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Suggestions">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarsuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/suggestions_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+
+        android:text="@string/suggestions_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="inherit"
+        android:textStyle="bold"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/fontdime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbarsuggestion" />
+
+    <EditText
+        android:id="@+id/et_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+android:padding="5dp"
+        android:gravity="start"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:scrollbars="vertical"
+        android:textAlignment="inherit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_suggestion"
+        android:text="@string/suggestions_bu_send"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:onClick="insertSuggestion"
+        android:background="@drawable/button_defult"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

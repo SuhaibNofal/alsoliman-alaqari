@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "160058617053",
+    "firebase_url": "https://sulimanalaqaria.firebaseio.com",
+    "project_id": "sulimanalaqaria",
+    "storage_bucket": "sulimanalaqaria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160058617053:android:b48e9fd95272711c39bf34",
+        "android_client_info": {
+          "package_name": "com.sulimanalaqaria.user.sulimanalaqaria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160058617053-rpl5h8ik9rvltb9avfnhb48gq6i2q98a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sulimanalaqaria.user.sulimanalaqaria",
+            "certificate_hash": "c6a1192f5ba403fdc543c199d4c538f6a1394b63"
+          }
+        },
+        {
+          "client_id": "160058617053-rv2nln27s4e2m6eqv1fi3mb1icd61tnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKDfYxOF_OnVeF7VPrpRBJaND8gGuH7EI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160058617053-rv2nln27s4e2m6eqv1fi3mb1icd61tnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageWidth">100dp</dimen>
+    <dimen name="imagehight">100dp</dimen>
+    <dimen name="nav_header_height">40dp</dimen>
+    <dimen name="fontdime">12sp</dimen>
+    <dimen name="fontdimeTitle">18sp</dimen>
+    <dimen name="margintopleft">10dp</dimen>
+    <dimen name="margintopRight">5dp</dimen>
+    <dimen name="margintopleftVisit">40dp</dimen>
+    <dimen name="margintopRightVisit">42dp</dimen>
+    <dimen name="info_layout_height">30dp</dimen>
+    <dimen name="info_layout_height_text">14dp</dimen>
+    //Main Activity for image in drawer item
+    <dimen name="maint_set_width">20dp</dimen>
+    <dimen name="maint_set_height">25dp</dimen>
+    <dimen name="main_set_margin">3dp</dimen>
+
+    //maintenance_order
+    <dimen name="first_layput_main_margin_top">40dp</dimen>
+</resources>

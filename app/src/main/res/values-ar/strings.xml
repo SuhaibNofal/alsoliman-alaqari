@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SulimanALaqaria</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">تسجيل الخروج</string>
+    <string name="text_in_main_activity">في السليمان العقارية نوفر الفرص الاستثمارية المميزة، ونواكب نهضة البناء، ونقدم منتجات عقارية ملائمة للسوق، بقيمة مضافة في الجودة والخدمات، فرؤيتنا نوعية لمشاريعنا السكنية .. قدمنا ما نفخر به خلال العقد الماضي، ونقدم ما نواصل به مسيرة نجاحنا ـ بعد عون الله وتوفيقه .</string>
+    //translate LogIn Activity
+    <string name="login_UserName">اسم المستخدم</string>
+    <string name="login_Password">كلمة المرور</string>
+    <string name="bu_Log_In">تسجيل الدخول</string>
+    <string name="error_Message_UserName">اسم المستخدم خاطئ</string>
+    <string name="error_Message_UserName_toLong">اسم المستخدم طويل</string>
+    <string name="error_Message_Passworld">كلمة المرور خاطئة</string>
+    <string name="ProgressDialogTitle">تحميل البيانات</string>
+    <string name="ProgressDialogMessage">الرجاء الانتظار...</string>
+    <string name="Log_in_Faild_User">مسخدم خاطئ</string>
+    <string name="Log_in_User_is_Not_Active">هذا المستخدم غير فعال</string>
+    <string name="Log_in_ًWelcom_To_Alsoliman">اهلا بكم في السليمان</string>
+    <string name="Check_Internet_Connection">تأكد من الإتصال</string>
+    <string name="familyـhealthـclub">النادي الصحي</string>
+    //translate Maintenance Activity
+    <string name="MainActivity_tv_title">الرئيسة</string>
+    <string name="MainActivity_bu_request">أطلب الآن</string>
+    <string name="MainActivity_bu_call">إتصل بنا</string>
+    <string name="MainActivity_drawer_tv_reservation">حجوزاتي</string>
+    <string name="MainActivity_drawer_tv__services">الخدمات</string>
+    <string name="MainActivity_drawer_tv_clean_req">طلب نظافة</string>
+    <string name="MainActivity_drawer_tv_maint_req">طلب صيانة</string>
+    <string name="MainActivity_drawer_tv_notify">الإشعارات</string>
+    <string name="MainActivity_drawer_tv_information">معلوماتي</string>
+    <string name="MainActivity_drawer_tv_setting">الإعدادات</string>
+    <string name="MainActivity_drawer_tv__languge">اللغة</string>
+
+    //translate Maintenance Activity
+    <string name="Maintenance_text_title">طلب صيانة</string>
+    <string name="Maintenance_text_Type">نوع الصيانة</string>
+    <string name="Maintenance_the_service">الخدمة</string>
+    <string name="Maintenance_text_Unit">الوحدة</string>
+    <string name="Maintenance_text_Order_details">تفاصيل الطلب</string>
+    <string name="Maintenance_text_view_prev_req">طلبات الصيانة السابقة</string>
+    <string name="Maintenance_bu_submit">تأكيد</string>
+    <string name="Maintenance_bu_cancel">إلغاء</string>
+    <string name="Maintenance_Service_Not_Found">لا يتوفر خدمات</string>
+    <string name="Maintenance_Feiled_not_completed">الحقول غير كاملة</string>
+    <string name="Maintenance_request_is_done">تم الطلب</string>
+    <string name="Maintenance_somthing_rong_not_requested">حدث خطأ،لم يتم الطلب</string>
+
+    //translate Clean Activity
+    <string name="Clean_toast_no_clean_availabl">خدمة طلب نظافة غير متوفرة</string>
+    <string name="Clean_toast_emp_and_NoOFHoures">الرجاء ادخال عدد الموظفين والساعات</string>
+    <string name="Clean_text_No_Of_Emp">عدد الموظفين</string>
+    <string name="Clean_text_No_Of_Hourse">عدد الساعات</string>
+    <string name="Clean_text_title">طلب نظافة</string>
+    <string name="Clean_text_Type">نوع النظافة</string>
+    <string name="Clean_the_service">الخدمة</string>
+    <string name="Clean_text_Unit">الوحدة</string>
+    <string name="Clean_text_Order_details">تفاصيل الطلب</string>
+    <string name="Clean_text_view_prev_req">طلبات النظافة السابقة</string>
+    <string name="Clean_bu_submit">تأكيد</string>
+    <string name="Clean_bu_cancel">إلغاء</string>
+    <string name="Clean_Service_Not_Found">لا يتوفر خدمات</string>
+    <string name="Clean_Feiled_not_completed">الحقول غير كاملة</string>
+    <string name="Clean_request_is_done">تم الطلب</string>
+    <string name="Clean_somthing_rong_not_requested">حدث خطأ،لم يتم الطلب</string>
+    //translate PreviousMaintOrder Activity
+    <string name="PreviousMaint_text_title">طلبات الصيانة السابقة</string>
+    <string name="PreviousMaint_text_order_no">رقم الطلب</string>
+    <string name="PreviousMaint_text_order_status">حالة الطلب</string>
+    <string name="PreviousMaint_text_service_type">نوع الخدمة</string>
+    <string name="PreviousMaint_text_maint_type">نوع الصيانة</string>
+
+    //translate PreviousCleanOrder Activity
+    <string name="PreviousClean_text_title">طلبات النظافة السابقة</string>
+    <string name="PreviousClean_text_clean_type">نوع النظافة</string>
+
+    //translate PreviousVisitOrder Activity
+    <string name="PreviousVisit_text_title">طلبات الزيارة السابقة</string>
+    <string name="PreviousVisit_text_date_visit">تاريخ الطلب</string>
+    <string name="PreviousVisit_text_visit_name">اسماء الزوار</string>
+    <string name="PreviousVisit_text_visit_Time">اوقات الزيارة</string>
+    <string name="PreviousVisit_text_visit_Reason">سبب الزيارة</string>
+
+    //translate VisitOrder Activity
+    <string name="VisitOrder_text_title">طلب زيارة</string>
+    <string name="VisitOrder_text_entery_date_visit">قم بإدخال التاريخ</string>
+    <string name="VisitOrder_text_entery_visit_order_time">قم بإدخال الوقت</string>
+    <string name="VisitOrder_text_entery_visit_order_unit_number">أدخل رقم الوحدة</string>
+    <string name="VisitOrder_text_entery_visit_order_Reason_visit">أدخل سبب الزيارة</string>
+    <string name="VisitOrder_text_entery_visit_order_name">أدخل الإسم</string>
+    <string name="VisitOrder_text_entery_visit_order_visit_name">أدخل إسم الزائر</string>
+    <string name="VisitOrder_text_tv_date">التاريخ</string>
+    <string name="VisitOrder_text_tv_unit">الوحدة</string>
+    <string name="VisitOrder_text_tv_name">الإسم</string>
+    <string name="VisitOrder_text_tv_name_visitor">اسم الزائر</string>
+    <string name="VisitOrder_text_tv_time">الوقت</string>
+    <string name="VisitOrder_text_tv_visit_reason">اسباب الزيارة</string>
+    <string name="VisitOrder_text_select_date">أدخل التاريخ</string>
+    <string name="VisitOrder_text_name">الإسم</string>
+    <string name="VisitOrder_text_visitor_name">اسم الزائر</string>
+    <string name="VisitOrder_text_select_time">أدخل الوقت</string>
+    <string name="VisitOrder_text_bu_submit">تأكيد</string>
+    <string name="VisitOrder_text_bu_previous_visit">طلبات زيارة سابقة</string>
+    <string name="ch_txt_req">اخلاء مسؤولية وموافقة على دخول الشقة</string>
+    //translate Reservation Activity
+    <string name="Reservation_text_title">الحجوزات</string>
+    //translate detailReservation Activity
+    <string name="detailReservation_tv_title">طلب حجز</string>+
+    <string name="detailReservation_tv_book_amount">مبلغ الحجز</string>
+    <string name="detailReservation_tv_avail_time">الاوقات المتاحة لحجز</string>
+    <string name="detailReservation_tv_day">اليوم</string>
+    <string name="detailReservation_tv_fhours">من الساعة</string>
+    <string name="detailReservation_tv_thours">الى الساعة</string>
+    <string name="detailReservation_tv_selectdate">إختار التاريخ</string>
+    <string name="detailReservation_tv_date">التاريخ</string>
+    <string name="detailReservation_bu_req">أطلب</string>
+    <string name="detailReservation_toast_enter_date"> قم بإدخال التاريخ</string>
+    <string name="detailReservation_toast_selecttime">اختر وقت الحجز</string>
+    <string name="detailReservation_toast_Req_done">تم الطلب</string>
+    <string name="detailReservation_toast_check_date">هذا التاريخ والوقت محجوز</string>
+    //translate Services Activity
+    <string name="Services_text_title">الخدمات</string>+
+    <string name="Services_text_maint">صيانة</string>
+    <string name="Services_text_clean">نظافة</string>
+    <string name="Services_text_visit">زوار</string>
+    <string name="Services_text_reser">حجوزات</string>
+
+
+    //translate Information Activity
+    <string name="info_text_title">معلوماتي</string>
+    <string name="info_text_Apartment">الشقة</string>
+    <string name="info_text_NetArea">المساحة الصافية</string>
+    <string name="info_text_balance">الرصيد الحالي</string>
+    <string name="info_text_rent_information">معلومات الإيجار</string>
+    <string name="info_text_rent_expir">تاريخ انتهاء الإيجار</string>
+    <string name="info_text_next_pay">تاريخ الدفعة القادم</string>
+    <string name="info_text_rent_rent_amount">قيمة الإيجار</string>
+    <string name="info_text_tv_Unit"> الوحدة :</string>
+    <string name="info_text_Totalarea">المساحة :</string>
+    <string name="info_text_tv_RentAmt">قيمة الايجار:</string>
+    <string name="info_text_tv_Balance">الرصيد</string>
+    <string name="info_text_tv_ContrDate">تاريخ العقد :</string>
+    <string name="info_text_tv_RentStrtDate">بداية الايجار :</string>
+    <string name="info_text_tv_RentEndDate">نهاية الايجار :</string>
+    <string name="info_tv_ElectricityMeterNumber">رقم عداد الكهرباء :</string>
+    <string name="info_tv_NumberofCardsReceived">عدد البطاقات المستلمة :</string>
+    //translate Approval Offers Price
+    <string name="Approval_text_title">عرض سعر</string>
+    <string name="Approval_text_detail">عرض سعر خاص بطلب صيانة رقم</string>
+    <string name="Approval_Offer_value">قيمة العرض</string>
+    <string name="Approval_buSubmit">تأكيد</string>
+    <string name="Approval_its_ok">تمت الموافقة</string>
+
+    //translate Rating
+    <string name="Rating_text_title">التقييم</string>
+    <string name="Rating_text_detail_Maint">تم إغلاق طلب الصيانة</string>
+    <string name="Rating_text_detail_Clean">تم إغلاق طلب التنظيف</string>
+    <string name="Rating_text_detail_Res">تم اغلاق الحجز</string>
+    <string name="Rating_text_Services">تقييم الخدمة</string>
+    <string name="Rating_text_Note">ملاحظات</string>
+    <string name="Rating_buRating">تقييم</string>
+    <string name="Rating_its_ok">تم التقييم شكرا لك</string>
+
+    //translate Approval Login to unit Price
+    <string name="Approv_Log_in">تمت الموافقة</string>
+
+    //translate FamilyinGym
+    <string name="family_title">أفراد العائلة المصرح لهم بالدخول</string>
+    <string name="tv_percent_Gym">نسبة الاشغال الحالية في النادي الصحي</string>
+    <string name="tv_Gym_ListWork_day">اليوم</string>
+    <string name="tv_Gym_ListWork_gender">الجنس</string>
+    <string name="tv_Gym_ListWork_fhour">من الساعة</string>
+    <string name="tv_Gym_ListWork_thour">الى الساعة</string>
+    <string name="ch_txt">اخلاء مسؤولية</string>
+    <string name="Res_Replay_tv_title">عزيزي العميل</string>
+    <string name="Res_Replay_tv">عزيزي العميل يرجى مراجعة الاضرار الناجمة عن سوء استخدام المرفق</string>
+    <string name="tv_Gym_time">الأوقات المتاحة في النادي الصحي</string>
+    //translate seggestions
+    <string name="suggestions_title">شكاوى واقتراحات</string>
+    <string name="suggestions_bu_send">إرسال</string>
+    <string name="suggestions_tv">   لمساعدتنا على تقديم أفضل الخدمات، يرجى مشاركتنا بأي ملاحظات أو شكاوي، أو اقتراحات و سوف نتواصل معكم لأجل الرد على استفساراتكم.شاكرين لكم تعاونكم </string>
+    //
+    <string name="Communication_title">التواصل والمتابعة</string>
+    <string name="Communication_Operation_manger">مدير التشغيل</string>
+    <string name="Communication_Email">الايميل</string>
+    <string name="Communication_Phone">رقم الجوال</string>
+    <string name="Communication_Property_manager">مدير الاملاك</string>
+    <string name="Communication_Reception">الاستقبال</string>
+    //
+    <string name="selectImage">اختيار صورة</string>
+    <string name="bu_select">اختيار</string>
+    <string name="bu_add">إضافة</string>
+    //
+    <string name="Payment_Title">معلومات الدفع</string>
+
+    //
+    <string name="Detail_rent_Title">تفاصيل الايجار</string>
+    <string name="Detail_rent_tenant_name">اسم المستاجر :</string>
+    <string name="Detail_rent_Start">بداية الايجاد :</string>
+    <string name="Detail_rent_end">نهاية الايجار :</string>
+    <string name="Detail_rent_amount">قيمة الايجار :</string>
+
+    ///////////////////////////////////////////
+    <string name="checkout_ui_callback_scheme">checkoutui</string>
+    <string name="payment_button_callback_scheme">paymentbutton</string>
+    <string name="custom_ui_callback_scheme">customui</string>
+
+    <string name="checkout_ui_title">Ready-to-Use UI</string>
+    <string name="payment_button_title">Payment Button</string>
+    <string name="custom_ui_title">SDK &amp; Your Own UI</string>
+    <string name="checkout_immediately_with">Checkout immediately with</string>
+    <string name="sdk_version_number">mobile sdk v%s</string>
+    <string name="visa">VISA</string>
+
+    <string name="card_holder_hint">Card Holder</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="card_expiry_month_hint">MM</string>
+    <string name="card_expiry_year_hint">YY</string>
+    <string name="card_cvv_hint">CVV</string>
+
+    <string name="date_delimiter">/</string>
+
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_proceed_to_checkout">PROCEED TO CHECKOUT</string>
+    <string name="button_pay_now">PAY NOW</string>
+
+    <string name="message_successful_payment">The payment was successful</string>
+    <string name="message_unsuccessful_payment">"The payment was unsuccessful"</string>
+    <string name="message_payment_confirmation">Payment of %1$s %2$s will be executed</string>
+
+    <string name="progress_message_please_wait">Please wait…</string>
+    <string name="progress_message_checkout_id">Getting the checkout id…</string>
+    <string name="progress_message_checkout_info">Getting the checkout info…</string>
+    <string name="progress_message_payment_status">Getting the payment status…</string>
+    <string name="progress_message_processing_payment">Processing payment…</string>
+
+    <string name="error_message">An error occurred</string>
+    <string name="error_empty_fields">The fields must not be empty</string>
+</resources>

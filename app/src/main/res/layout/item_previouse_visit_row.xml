@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_visit_date_order"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/tv_visit_visitor_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/tv_visit_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/tv_visit_reasone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dark"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

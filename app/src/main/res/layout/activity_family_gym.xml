@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FamilyinGym"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_gym"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/familyـhealthـclub"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="@dimen/fontdime"
+            android:text="@string/tv_percent_Gym" />
+
+        <TextView
+            android:id="@+id/tv_percent_Gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView12"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:textSize="@dimen/fontdime"
+            android:background="@color/colorPrimary"
+            android:layout_alignBaseline="@+id/textView12"
+            android:text="20%" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="@dimen/fontdime"
+            android:text="الأوقات المتاحة في النادي الصحي" />
+
+        <TextView
+            android:id="@+id/tv_Time_Gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView13"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:textSize="@dimen/fontdime"
+            android:background="@color/colorPrimary"
+            android:layout_alignBaseline="@+id/textView13"
+            android:text="20%" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/MemberFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/family_title"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="@dimen/fontdimeTitle"/>
+    <ListView
+        android:id="@+id/list_Gym"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="false">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Maintenance_bu_submit"
+        android:layout_margin="8dp"
+        android:onClick="gym_submit"
+        android:textSize="@dimen/fontdimeTitle"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_defult"/>
+
+</LinearLayout>-->
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_gym"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/familyـhealthـclub"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/fontdimeTitle"
+        android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabGravity="fill"/>
+</com.google.android.material.appbar.AppBarLayout>
+
+<androidx.viewpager.widget.ViewPager
+android:id="@+id/viewpager"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+
+android:paddingBottom="?attr/actionBarSize"
+app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

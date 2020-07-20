@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_reservation"
+            android:icon="@drawable/hotel"
+            android:title="حجوزاتي" />
+        <item
+            android:id="@+id/services"
+            android:icon="@drawable/clean"
+            android:title="الخدمات" />
+        <item
+            android:id="@+id/nav_request_cleanliness"
+            android:icon="@mipmap/cleanee_round"
+            android:title="طلب نظافة" />
+        <item
+            android:id="@+id/nav_maintenance_request"
+            android:icon="@drawable/maintenance"
+            android:title="طلب صيانة" />
+    </group>
+
+    <item android:title="Setting"
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_Information"
+                android:icon="@drawable/ic_contact_mail_black_24dp"
+                android:title="معلوماتي" />
+            <!--<item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />-->
+
+        </menu>
+    </item>
+    <!--<item android:title="Language">
+        <menu>
+            <item
+                app:actionLayout="@layout/radio_button"
+                android:id="@+id/nav_radios"
+                android:title=""
+                />
+
+        </menu>
+    </item>-->
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.sulimanalaqaria.user.sulimanalaqaria.PreviousMaintOrder">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/txt_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/PreviousMaint_text_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontdimeTitle"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/li_title_rv_PrevuseMaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_maint_Type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PreviousMaint_text_maint_type"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_maint_type-Service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PreviousMaint_text_service_type"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_maint_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/PreviousMaint_text_order_status"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/fontdime"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_maint_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="@dimen/fontdime"
+            android:textColor="@color/dark"
+            android:textStyle="bold"
+            android:text="@string/PreviousMaint_text_order_no"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_maint_prevous_order1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/li_title_rv_PrevuseMaint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="1dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
